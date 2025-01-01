@@ -1,68 +1,143 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 20px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 헤더 */
+header {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+}
+
+header > .header-container {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+header .menu {
+  display: flex;
+  gap: 20px;
+  padding-right: 2em;
+}
+
+header .menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+header .menu a:hover {
+  color: #f39c12;
+}
+
+/* 이미지 슬라이더 */
+.slider {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+.slider .img {
+  width: 100%;
+  height: 750px;
+  display: block;
+  background-image: url('https://placehode.co/500x750');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slider .controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.slider .controls button {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+.slider .controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.slider .dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+.slider .dots button {
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider .dots button.active {
+  background-color: #f39c12;
+}
+.slider .dots button:hover {
+  background-color: #f39c12;
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.tabs {
-    display: flex;
-    justify-content: space-around;
-    border-bottom: 2px solid #ddd;
-    padding: 10px 0;
-}
-
-.tab {
-    text-decoration: none;
-    background-color: #f4f4f4;
-    padding: 10px 20px;
-    color: #333;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-.tab:hover {
-    background-color: #ddd;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .content {
-    padding: 20px;
+  padding: 20px;
 }
 
 form {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
 }
 
 form button {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 form button:hover {
-    background-color: #45a049;
+  background-color: #45a049;
 }
