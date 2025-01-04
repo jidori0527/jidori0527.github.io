@@ -21,6 +21,37 @@ hr {
   margin: 1rem 0;
 }
 
+.banner {
+  max-width: 1100px;
+  height: 45vw;
+  min-height: 250px;
+  max-height: 550px;
+  background-image: url('/images/big_banner.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center top;
+}
+
+/* 홈 */
+.introduction {
+  display: flex;
+}
+
+.introduction .logo {
+  border-right: 1px solid darkgray;
+  padding: 0 1rem;
+}
+
+.introduction .logo img {
+  max-width: 200px;
+}
+
+/* 홈 - 강사 소개*/
+.instructor .title {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* 헤더 */
 header {
   padding: 10px 20px;

@@ -19,15 +19,64 @@
             </nav>
         </div>
     </header>
+
     <div class="container">
         <div class="banner"></div>
+
         <div class="content">
-            <h2>홈</h2>
-            <p>여기는 홈 페이지입니다. 다양한 정보와 서비스에 대한 소개가 포함됩니다.</p>
+            <div class="introduction">
+
+                <div class="logo">
+                    <img alt="logo" src="/images/big_logo.jpg">
+                    <div class="brand">KGCL(한국청년성장컨설팅)
+                    </div>
+                </div>
+
+                <div class="content">
+                    <p style="color: darkgray;">한국청년성장컨설팅연구소</p>
+                    <p>한국청년성장컨설팅 연구소는 청년들의 성장과 발전을 촉진하는 비영리 단체로, 잠재력을 발휘하고 성공을 이룰 수 있도록 다양한
+                        프로그램과 서비스를 제공합니다</p>
+                </div>
+            </div>
+
+            <div class="instructor" style="margin-top: 5rem;">
+                <div class="title">
+                    <h2>강사 소개</h2>
+                    <a href="/instructor">더보기 ></a>
+                </div>
+                <p>권도순 강사 | MBTI, EPTI 전문상담사, 이미지컨설팅</p>
+
+                <hr />
+
+                <p>송지혜 강사 | 멘탈코칭, MBTI전문강사, EPTI전문강사, 이미지 컨설턴트</p>
+
+                <hr />
+
+                <p>강수아 강사 | 문학심리 상담, 감정코칭, 청년동행성장컨설팅</p>
+
+                <hr />
+
+                <p>홍은진 강사 | 연극치료, 감정멘탈코칭, 이미지컨설팅, MBTI전문상담사</p>
+
+            </div>
+
+            <div class="contact" style="margin-top: 5rem;">
+                <h2>문의</h2>
+                <form id="contact-us">
+                    <label for="name">이름</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="contact">연락처(핸드폰 or 이메일)</label><br>
+                    <input type="text" id="contact" name="contact"><br><br>
+                    <label for="message">내용</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                    <button type="submit">제출</button>
+                </form>
+            </div>
         </div>
     </div>
 
     <script src="script.js"></script>
+    <script src="/contact/script.js"></script>
 </body>
 
 </html>
