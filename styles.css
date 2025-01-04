@@ -17,6 +17,10 @@ p {
   margin: 0.5rem 0;
 }
 
+hr {
+  margin: 1rem 0;
+}
+
 /* 헤더 */
 header {
   padding: 10px 20px;
