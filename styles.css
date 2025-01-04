@@ -9,6 +9,14 @@ body {
   font-family: Arial, sans-serif;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
 /* 헤더 */
 header {
   padding: 10px 20px;
