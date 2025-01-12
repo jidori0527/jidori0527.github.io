@@ -7,6 +7,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
 
 h2 {
@@ -18,7 +19,7 @@ p {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .banner {
@@ -156,7 +157,7 @@ header .menu a:hover {
 }
 
 .content {
-  padding: 20px;
+  padding: 20px 100px;
 }
 
 form {
@@ -183,4 +184,16 @@ form button {
 
 form button:hover {
   background-color: #45a049;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  background: #000;
+  /* text-align: center; */
+  padding: 20px;
+}
+
+.footer p {
+  color: #666;
 }
