@@ -153,6 +153,7 @@ header .menu a:hover {
 
 .container {
   max-width: 1100px;
+  min-height: 80vh;
   margin: 0 auto;
 }
 
