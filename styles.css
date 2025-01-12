@@ -36,15 +36,34 @@ hr {
 /* 홈 */
 .introduction {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .introduction .logo {
   border-right: 1px solid darkgray;
   padding: 0 1rem;
+  align-content: center;
 }
 
 .introduction .logo img {
   max-width: 200px;
+}
+
+.introduction .content {
+  padding: 20px;
+  width: 60%;
+  flex-grow: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .introduction .logo {
+    border-right: 0px solid darkgray;
+  }
+
+  .introduction .content {
+    padding: 0px;
+  }
 }
 
 /* 홈 - 강사 소개*/
@@ -158,7 +177,13 @@ header .menu a:hover {
 }
 
 .content {
-  padding: 20px 100px;
+  padding: 50px 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .content {
+    padding: 50px;
+  }
 }
 
 form {
