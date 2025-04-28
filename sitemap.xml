@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <sitemap>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
     <loc>https://kgcl-official.com</loc>
     <lastmod>2025-04-21T21:22:00+09:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>1.0</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://kgcl-official.com/about/</loc>
     <lastmod>2025-04-21T21:22:00+09:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.8</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://kgcl-official.com/contact/</loc>
     <lastmod>2025-04-21T21:22:00+09:00</lastmod>
+    <changefreq>never</changefreq>
     <priority>0.8</priority>
-  </sitemap>
-  <sitemap>
+  </url>
+  <url>
     <loc>https://kgcl-official.com/instructor/</loc>
     <lastmod>2025-04-28T22:30:00+09:00</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
-  </sitemap>
-</sitemapindex>
+  </url>
+</urlset>
