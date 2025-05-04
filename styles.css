@@ -224,3 +224,18 @@ form button:hover {
 .footer p {
   color: #666;
 }
+
+.pop-up {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  max-width: 80vw;
+  max-height: 80vh;
+
+  background-color: white;
+  border: 1px solid #000;
+}
+
+.pop-up img {
+  width: 100%;
+}
