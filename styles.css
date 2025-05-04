@@ -237,5 +237,16 @@ form button:hover {
 }
 
 .pop-up img {
-  width: 100%;
+  height: 100%;
+}
+
+.pop-up-content {
+  background-image: url('./images/마음투자_지원사업_일대일_컨설팅.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 600px;
+  max-width: 78vw;
+  max-height: 52vw;
 }
