@@ -1,13 +1,21 @@
 const contactForm = document.getElementById('contact-us');
+const contactBtn = document.getElementById('contact-btn');
+
 const scriptURL =
   'https://script.google.com/macros/s/AKfycbz8wKsDoNPlMOKTXk-u6e4rNIFB-KGdt9JyI_t2Kt1ybZiXHhkR9wPYp9HU5Apqc4GY/exec';
 let submitting = false;
+
+const setSubmitting = (value) => {
+  submitting = value;
+  contactBtn.disabled = value;
+  contactBtn.innerText = value ? '전송중...' : '제출';
+};
 
 async function onSubmit(e) {
   e.preventDefault();
 
   if (submitting) return;
-  submitting = true;
+  setSubmitting(true);
 
   const formData = new FormData(e.target);
 
@@ -30,7 +38,7 @@ async function onSubmit(e) {
     alert('Error: ' + error.message);
   }
 
-  submitting = false;
+  setSubmitting(false);
 }
 
 contactForm.addEventListener('submit', onSubmit);
